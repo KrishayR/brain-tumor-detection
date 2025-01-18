@@ -21,7 +21,7 @@ The trained model can analyze MRI scans and detect tumor regions, outputting ann
 
 Example Output
 
-![alt text](https://github.com/[KrishayR]/[brain-tumor-detection]/blob/[branch]/image.jpg?raw=true)
+![alt text](https://github.com/KrishayR/brain-tumor-detection/blob/main/output.png)
 
 Objectives
 
