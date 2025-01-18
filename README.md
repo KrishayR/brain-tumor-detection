@@ -1,47 +1,29 @@
-# YOLOv8_Brain_Tumor_Detection
+YOLOv8 Brain Tumor Detection
 
-Welcome to the **YOLOv8_Brain_Tumor_Detection** repository! This project utilizes the YOLOv8 architecture to detect brain tumors from medical imaging. By harnessing state-of-the-art object detection techniques, our goal is to provide a reliable tool for automated tumor detection, which can assist healthcare professionals in diagnosing and planning treatment.
 
-## Project Overview
+Dataset
 
-**YOLOv8_Brain_Tumor_Detection** uses advanced machine learning algorithms to analyze brain scans for tumor presence. The project leverages a pre-trained YOLOv8 model, fine-tuned on a curated dataset of brain images, to achieve high precision and recall.
+This project utilizes the Medical Image Dataset: Brain Tumor Detection. The dataset includes labeled MRI scans categorized as tumor or non-tumor.
+https://www.kaggle.com/datasets/pkdarabi/medical-image-dataset-brain-tumor-detection/data
 
-### Data Preparation
+To get started, download and organize the dataset into separate folders for training and validation with a clear distinction between classes.
 
-The dataset includes images of brain scans from various sources, labeled for the presence of tumors. These images undergo several preprocessing steps to ensure model accuracy:
-- Resizing images to uniform dimensions for model compatibility.
-- Enhancing image contrast to highlight features relevant for tumor detection.
-- Augmenting the dataset to improve model robustness under different conditions.
+How It Works
 
-### Exploratory Data Analysis
+	1.	Data Preparation:
+Images from the dataset are preprocessed w/ resizing and normalizing, and labeled according to their categories.
+	2.	Model Training:
+The YOLOv8 model is fine-tuned using the preprocessed dataset, adapting it specifically for brain tumor detection tasks.
+	3.	Inference:
+The trained model can analyze MRI scans and detect tumor regions, outputting annotated images.
 
-Key activities in our exploratory data analysis include:
-- Analyzing the distribution of tumor sizes and locations to understand patterns.
-- Visualizing the balance between different classes to ensure model fairness and accuracy.
 
-## Model Training and Evaluation
+Example Output
 
-Our training process involves:
-- Utilizing the YOLOv8 network, starting from a pre-trained checkpoint on general objects.
-- Fine-tuning the model on our specific dataset to specialize it in detecting brain tumors.
-- Evaluating model performance using metrics such as accuracy, precision, recall, and F1-score across various thresholds.
+![alt text](https://github.com/[KrishayR]/[brain-tumor-detection]/blob/[branch]/image.jpg?raw=true)
 
-### Finetuning
+Objectives
 
-Fine-tuning the YOLOv8 model involves:
-- Loading the pre-trained YOLOv8 model.
-- Adapting the model to our brain tumor detection task by adjusting layers specifically for our image sizes and classes.
-- Training the model using a custom training loop with early stopping to prevent overfitting.
-
-## Objectives
-
-- **Improve Detection Accuracy**: Enhance the model's ability to accurately identify the presence of tumors in brain scans.
-- **Optimize Model Performance**: Refine the model to be efficient and reliable in different operational environments.
-- **Support Clinical Decisions**: Provide a tool that can assist medical professionals in making faster and more accurate diagnoses.
-
-## Conclusion
-
-The **YOLOv8_Brain_Tumor_Detection** project aims to advance medical imaging analysis through deep learning, providing a valuable tool for early and accurate tumor detection. It embodies our commitment to leveraging technology for better healthcare outcomes.
-
-Feel free to explore the code, suggest improvements, or contribute to the project to make it even more robust and widely applicable.
-
+	•	Reliable Tumor Detection: Create a tool that detects brain tumors with high confidence.
+	•	Accessible Workflow: Ensure ease of use for researchers and professionals.
+	•	Support Healthcare Decisions: Provide timely insights for medical professionals.
