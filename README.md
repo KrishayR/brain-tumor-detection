@@ -9,7 +9,6 @@ https://www.kaggle.com/datasets/pkdarabi/medical-image-dataset-brain-tumor-detec
 To get started, download and organize the dataset into separate folders for training and validation with a clear distinction between classes.
 
 How It Works
-
 	1.	Data Preparation:
 Images from the dataset are preprocessed w/ resizing and normalizing, and labeled according to their categories.
 	2.	Model Training:
